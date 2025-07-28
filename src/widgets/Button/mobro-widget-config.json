@@ -1,0 +1,89 @@
+{
+  "name": "button",
+  "displayName": "Button",
+  "filename": "Button.tsx",
+  "config": [
+    {
+      "type": "action",
+      "name": "action",
+      "label": "Action"
+    },
+    {
+      "type": "string",
+      "name": "label",
+      "label": "Label"
+    },
+    {
+      "type": "font",
+      "name": "label_font",
+      "label": "Font"
+    },
+    {
+      "type": "color",
+      "name": "label_color",
+      "label": "Color"
+    },
+    {
+      "type": "color",
+      "name": "background_color",
+      "label": "Color"
+    },
+    {
+      "type": "file",
+      "name": "background_image",
+      "accept": "image/*",
+      "label": "Image",
+      "multiple": false
+    },
+    {
+      "type": "color",
+      "name": "border_color",
+      "label": "Color"
+    },
+    {
+      "type": "number",
+      "name": "border_width",
+      "label": "Width"
+    },
+    {
+      "type": "string",
+      "name": "border_radius",
+      "label": "Radius"
+    }
+  ],
+  "layout": [
+    "action",
+    {
+      "type": "fieldset",
+      "label": "Label",
+      "collapsible": true,
+      "collapsed": true,
+      "children": [
+        "label",
+        "label_font",
+        "label_color"
+      ]
+    },
+    {
+      "type": "fieldset",
+      "label": "Background",
+      "collapsible": true,
+      "collapsed": true,
+      "children": [
+        "background_color",
+        "background_image"
+      ]
+    },
+    {
+      "type": "fieldset",
+      "label": "Border",
+      "collapsible": true,
+      "collapsed": true,
+      "children": [
+        "border_color",
+        "border_width",
+        "border_radius"
+      ]
+    }
+  ]
+}

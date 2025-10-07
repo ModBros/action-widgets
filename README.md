@@ -1,9 +1,12 @@
-# widget-pack-skeleton
+# Media Controls Widget Pack
 
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ModBros/media-controls-widgets?label=version)
 [![MoBro](https://img.shields.io/badge/-MoBro-red.svg)](https://mobro.app)
 [![Discord](https://img.shields.io/discord/620204412706750466.svg?color=7389D8&labelColor=6A7EC2&logo=discord&logoColor=ffffff&style=flat-square)](https://discord.com/invite/DSNX4ds)
 
-Skeleton template to create a widget pack for MoBro
+**Widget pack for MoBro**
+
+Widget pack to interact with actions provided by plugins.
 
 ## Documentation
 

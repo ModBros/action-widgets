@@ -14,6 +14,11 @@
       "label": "Font"
     },
     {
+      "type": "number",
+      "name": "label_font_size",
+      "label": "Font Size"
+    },
+    {
       "type": "color",
       "name": "label_color",
       "label": "Color"
@@ -56,6 +61,7 @@
       "children": [
         "label",
         "label_font",
+        "label_font_size",
         "label_color"
       ]
     },

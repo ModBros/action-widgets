@@ -16,6 +16,7 @@ export const Button = () => {
   // label
   const label = useStringField({ field: 'label' })
   const labelFont = useFontField({ field: 'label_font' })
+  const labelFontSize = useNumberField({ field: 'label_font_size' })
   const labelColor = useColorField({ field: 'label_color' })
 
   // background
@@ -36,6 +37,10 @@ export const Button = () => {
 
   if (labelFont) {
     style.fontFamily = labelFont
+  }
+
+  if(labelFontSize) {
+    style.fontSize = `${labelFontSize}px`;
   }
 
   if (!labelColor.isEmpty()) {

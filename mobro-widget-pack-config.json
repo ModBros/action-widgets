@@ -1,4 +1,6 @@
 {
   "name": "modbros_actions",
-  "displayName": "Actions"
+  "displayName": "Actions",
+  "description": "Customizable widgets for invoking actions.",
+  "author": "ModBros"
 }

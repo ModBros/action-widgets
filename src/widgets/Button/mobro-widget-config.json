@@ -4,11 +4,6 @@
   "filename": "Button.tsx",
   "config": [
     {
-      "type": "action",
-      "name": "action",
-      "label": "Action"
-    },
-    {
       "type": "string",
       "name": "label",
       "label": "Label"

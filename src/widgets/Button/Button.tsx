@@ -1,6 +1,5 @@
 import React, { CSSProperties } from 'react'
 import {
-  useActionField,
   useColorField,
   useFileField,
   useFontField,
@@ -14,8 +13,6 @@ const StyledButton = styled.button`
 `
 
 export const Button = () => {
-  const onClick = useActionField({ field: 'action' })
-
   // label
   const label = useStringField({ field: 'label' })
   const labelFont = useFontField({ field: 'label_font' })
@@ -28,9 +25,14 @@ export const Button = () => {
   // border
   const borderColor = useColorField({ field: 'border_color' })
   const borderWidth = useNumberField({ field: 'border_width', defaultValue: 3 })
-  const borderRadius = useStringField({ field: 'border_radius', defaultValue: '' })
+  const borderRadius = useStringField({
+    field: 'border_radius',
+    defaultValue: ''
+  })
 
-  const style: CSSProperties = {}
+  const style: CSSProperties = {
+    cursor: 'pointer'
+  }
 
   if (labelFont) {
     style.fontFamily = labelFont
@@ -55,16 +57,11 @@ export const Button = () => {
 
   style.borderStyle = 'solid'
   style.borderWidth = borderWidth
-  style.borderRadius = borderRadius.match(/^\d+$/) ? `${borderRadius}px` : borderRadius
+  style.borderRadius = borderRadius.match(/^\d+$/)
+    ? `${borderRadius}px`
+    : borderRadius
 
-  return (
-    <StyledButton
-      onClick={onClick}
-      style={style}
-    >
-      {label}
-    </StyledButton>
-  )
+  return <StyledButton style={style}>{label}</StyledButton>
 }
 
 export default Button

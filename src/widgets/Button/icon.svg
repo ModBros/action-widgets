@@ -1,0 +1,22 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#clip0)">
+    <rect width="64" height="64" fill="#535354"/>
+    <path
+      d="M10 23C10 20.2386 12.2386 18 15 18H49C51.7614 18 54 20.2386 54 23V39C54 41.7614 51.7614 44 49 44H15C12.2386 44 10 41.7614 10 39V23Z"
+      fill="#DDDDE0"/>
+    <path
+      d="M12 23C12 21.3431 13.3431 20 15 20H49C50.6569 20 52 21.3431 52 23V39C52 40.6569 50.6569 42 49 42H15C13.3431 42 12 40.6569 12 39V23Z"
+      fill="white"/>
+    <rect width="64" height="64" fill="url(#gradient)" style="mix-blend-mode:multiply"/>
+    <path d="M27 25L27 39L31 35.5L34 40L36 39L33 34L37 33L27 25Z" fill="white"/>
+  </g>
+  <defs>
+    <linearGradient id="gradient" x1="64" y1="0" x2="0" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#11998E"/>
+      <stop offset="1" stop-color="#38EF7D"/>
+    </linearGradient>
+    <clipPath id="clip0">
+      <rect width="64" height="64" rx="12" fill="white"/>
+    </clipPath>
+  </defs>
+</svg>

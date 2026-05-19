@@ -1,6 +1,6 @@
 {
   "name": "modbros_actions",
   "displayName": "Actions",
-  "description": "Customizable widgets for invoking actions.",
+  "description": "A collection of simple and highly customizable action widgets for triggering plugin actions directly from your dashboard.",
   "author": "ModBros"
 }

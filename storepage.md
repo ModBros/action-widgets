@@ -1,5 +1,7 @@
-Offers simple and highly customizable widgets to interact with actions provided by plugins.
+A collection of simple and highly customizable action widgets for triggering plugin actions directly from your dashboard.
 
-### Button
+#### Button
 
-The button widget is a customizable button that can either be customized via the provided properties like border, background, border radius etc. or simply take a picture.
+A fully customizable button widget that triggers any action provided by a MoBro plugin when clicked.
+Style it with a custom label, font, colors, and border — or simply use a background image to turn any picture into a clickable control.
+Ideal for launching applications, toggling services, sending commands, or any other one-click action your plugins expose.

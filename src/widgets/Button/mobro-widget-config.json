@@ -1,54 +1,64 @@
 {
   "name": "button",
   "displayName": "Button",
+  "description": "A fully customizable button widget that triggers any action provided by a plugin when clicked.",
   "filename": "Button.tsx",
   "config": [
     {
       "type": "string",
       "name": "label",
-      "label": "Label"
+      "label": "Label",
+      "description": "The text displayed on the button. Leave empty to show no label, e.g. when using a background image instead."
     },
     {
       "type": "font",
       "name": "label_font",
-      "label": "Font"
+      "label": "Font",
+      "description": "The font family used to render the button label."
     },
     {
       "type": "number",
       "name": "label_font_size",
-      "label": "Font Size"
+      "label": "Font Size",
+      "description": "The font size of the button label in pixels."
     },
     {
       "type": "color",
       "name": "label_color",
-      "label": "Color"
+      "label": "Color",
+      "description": "The color of the button label text."
     },
     {
       "type": "color",
       "name": "background_color",
-      "label": "Color"
+      "label": "Color",
+      "description": "The background fill color of the button. Ignored when a background image is set."
     },
     {
       "type": "file",
       "name": "background_image",
       "accept": "image/*",
       "label": "Image",
-      "multiple": false
+      "multiple": false,
+      "description": "An optional background image for the button. When set, it replaces the background color and fills the button area."
     },
     {
       "type": "color",
       "name": "border_color",
-      "label": "Color"
+      "label": "Color",
+      "description": "The color of the button border."
     },
     {
       "type": "number",
       "name": "border_width",
-      "label": "Width"
+      "label": "Width",
+      "description": "The thickness of the button border in pixels. Set to 0 to hide the border."
     },
     {
       "type": "string",
       "name": "border_radius",
-      "label": "Radius"
+      "label": "Radius",
+      "description": "The corner rounding of the button border. Accepts CSS values such as '8px' or '50%' for a pill/circle shape."
     }
   ],
   "layout": [

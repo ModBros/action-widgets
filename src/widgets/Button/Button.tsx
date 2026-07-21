@@ -39,8 +39,8 @@ export const Button = () => {
     style.fontFamily = labelFont
   }
 
-  if(labelFontSize) {
-    style.fontSize = `${labelFontSize}px`;
+  if (labelFontSize) {
+    style.fontSize = `${labelFontSize}px`
   }
 
   if (!labelColor.isEmpty()) {
@@ -52,7 +52,9 @@ export const Button = () => {
     style.backgroundSize = 'cover'
     style.backgroundPosition = '50% 50%'
     style.backgroundRepeat = 'no-repeat'
-  } else if (!backgroundColor.isEmpty()) {
+  }
+
+  if (!backgroundColor.isEmpty()) {
     style.backgroundColor = backgroundColor.toRgbaCss()
   }
 

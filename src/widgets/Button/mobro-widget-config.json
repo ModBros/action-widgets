@@ -29,6 +29,59 @@
       "description": "The color of the button label text."
     },
     {
+      "type": "file",
+      "name": "icon",
+      "accept": "image/*",
+      "label": "Image",
+      "multiple": false,
+      "description": "An optional icon displayed on the button. Unlike the background image it keeps its own size and can be combined with the label."
+    },
+    {
+      "type": "select",
+      "name": "icon_position",
+      "label": "Position",
+      "defaultValue": "prefix",
+      "options": [
+        {
+          "label": "Prefix (before label)",
+          "value": "prefix"
+        },
+        {
+          "label": "Suffix (after label)",
+          "value": "suffix"
+        }
+      ],
+      "description": "Whether the icon is placed before or after the label. Without a label the icon is always centered."
+    },
+    {
+      "type": "number",
+      "name": "icon_width",
+      "label": "Width",
+      "min": 0,
+      "description": "The width of the icon in pixels. Leave empty to scale automatically based on the height."
+    },
+    {
+      "type": "number",
+      "name": "icon_height",
+      "label": "Height",
+      "min": 0,
+      "description": "The height of the icon in pixels. Leave empty to scale automatically based on the width."
+    },
+    {
+      "type": "number",
+      "name": "icon_gap",
+      "label": "Gap",
+      "min": 0,
+      "description": "The spacing between the icon and the label in pixels."
+    },
+    {
+      "type": "checkbox",
+      "name": "icon_fill_space",
+      "label": "Fill Space",
+      "defaultValue": false,
+      "description": "Push the icon and the label to opposite ends of the button. The gap is then used as left/right padding instead of the spacing in between."
+    },
+    {
       "type": "color",
       "name": "background_color",
       "label": "Color",
@@ -68,11 +121,20 @@
       "label": "Label",
       "collapsible": true,
       "collapsed": true,
+      "children": ["label", "label_font", "label_font_size", "label_color"]
+    },
+    {
+      "type": "fieldset",
+      "label": "Icon",
+      "collapsible": true,
+      "collapsed": true,
       "children": [
-        "label",
-        "label_font",
-        "label_font_size",
-        "label_color"
+        "icon",
+        "icon_position",
+        "icon_width",
+        "icon_height",
+        "icon_gap",
+        "icon_fill_space"
       ]
     },
     {
@@ -80,21 +142,14 @@
       "label": "Background",
       "collapsible": true,
       "collapsed": true,
-      "children": [
-        "background_color",
-        "background_image"
-      ]
+      "children": ["background_color", "background_image"]
     },
     {
       "type": "fieldset",
       "label": "Border",
       "collapsible": true,
       "collapsed": true,
-      "children": [
-        "border_color",
-        "border_width",
-        "border_radius"
-      ]
+      "children": ["border_color", "border_width", "border_radius"]
     }
   ]
 }
